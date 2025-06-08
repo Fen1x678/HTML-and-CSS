@@ -1,0 +1,14 @@
+{
+  "name": "my-node-project",
+  "version": "1.0.0",
+  "description": "Простой сервер на Express",
+  "main": "server-express.js",
+  "scripts": {
+    "start": "node server-express.js",
+    "dev": "nodemon server-express.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}

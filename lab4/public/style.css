@@ -1,0 +1,108 @@
+/* Базовые стили */
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2d3748;
+}
+
+/* Контейнер */
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Карточка */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+/* Заголовок */
+h1 {
+  color: #1a365d;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+}
+
+/* Форма */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #4299e1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+button {
+  background: #4299e1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background: #3182ce;
+  transform: translateY(-2px);
+}
+
+/* Сообщения */
+#response {
+  display: none;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.success {
+  background: #c6f6d5;
+  color: #22543d;
+  display: block;
+}
+
+.error {
+  background: #fed7d7;
+  color: #742a2a;
+  display: block;
+}
+
+/* API-тест */
+.api-test {
+  margin-top: 30px;
+  padding: 15px;
+  background: #ebf8ff;
+  border-radius: 8px;
+}
+
+.api-test button {
+  background: #38a169;
+  margin-top: 10px;
+}
+
+.api-test button:hover {
+  background: #2f855a;
+}
