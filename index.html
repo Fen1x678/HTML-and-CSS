@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Финансовый трекер</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Финансовые операции -->
+    <section class="section">
+      <h1><i class="fas fa-wallet"></i> Финансовые операции</h1>
+      <div id="toast-container"></div>
+      <div id="cards-container"></div>
+      <button id="add-card" class="finance-btn">
+        <i class="fas fa-plus-circle"></i> Добавить операцию
+      </button>
+    </section>
+
+    <!-- Информеры -->
+    <section class="section">
+      <h1><i class="fas fa-chart-line"></i> Финансовый дашборд</h1>
+      <div class="informer-container">
+        <div class="informer">
+          <div class="informer-icon"><i class="fas fa-piggy-bank"></i></div>
+          <div class="informer-value">$0</div>
+          <div class="informer-label">Общий баланс</div>
+          <div class="history-toggle">Показать историю <i class="fas fa-chevron-down"></i></div>
+          <div class="history-container hidden">
+            <canvas id="balance-history"></canvas>
+          </div>
+        </div>
+        <div class="informer">
+          <div class="informer-icon"><i class="fas fa-arrow-up"></i></div>
+          <div class="informer-value">$0</div>
+          <div class="informer-label">Доходы</div>
+        </div>
+        <div class="informer">
+          <div class="informer-icon"><i class="fas fa-arrow-down"></i></div>
+          <div class="informer-value">$0</div>
+          <div class="informer-label">Расходы</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Продукты -->
+    <section class="section">
+      <h1><i class="fas fa-shopping-bag"></i> Обучающие курсы</h1>
+      <div class="products-container">
+        <div class="product-card">
+          <div class="badge badge-new">Новинка</div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/XqZsoesa55w" title="Финансы" allowfullscreen></iframe>
+          </div>
+          <h3>Финансы для начинающих</h3>
+          <p class="product-description">Научитесь управлять бюджетом, инвестировать и экономить</p>
+          <div class="product-footer">
+            <span class="product-price">9 999 ₽</span>
+            <button class="buy-btn">Купить</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="badge badge-sale">-30%</div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YQHsXMglC9A" title="Дизайн" allowfullscreen></iframe>
+          </div>
+          <h3>Дизайн интерфейсов</h3>
+          <p class="product-description">Освойте Figma и создавайте современные UI/UX дизайны</p>
+          <div class="product-footer">
+            <span class="product-price">6 999 ₽ <s>9 999 ₽</s></span>
+            <button class="buy-btn">Купить</button>
+          </div>
+        </div>
+        
+        <div class="product-card">
+          <div class="badge badge-bestseller">Бестселлер</div>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/7ghhRHRP6t4" title="Веб-разработка" allowfullscreen></iframe>
+          </div>
+          <h3>Веб-разработка</h3>
+          <p class="product-description">Полный курс по созданию современных веб-приложений</p>
+          <div class="product-footer">
+            <span class="product-price">14 999 ₽</span>
+            <button class="buy-btn">Купить</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
