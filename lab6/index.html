@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторная работа 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <section>
+      <h2>Информер (Дизайн)</h2>
+      <div class="informer">
+        <p>Баланс: <span id="balance">0 ₽</span></p>
+        <p>Доход: <span id="income">0 ₽</span></p>
+        <p>Расход: <span id="expenses">0 ₽</span></p>
+        <button id="add-income">Добавить доход</button>
+        <button id="add-expense">Добавить расход</button>
+        <button id="add-card">Добавить карточку</button>
+        <button id="edit-cards">Редактировать карточки</button> 
+      </div>
+    </section>
+
+    <section>
+      <h2>Фотографии городов</h2>
+      <div class="button-group">
+        <button data-city="all">Все</button>
+        <button data-city="tokyo">Токио</button>
+        <button data-city="moscow">Москва</button>
+        <button data-city="la">Лос-Анджелес</button>
+        <button data-city="paris">Париж</button>
+        <button data-city="dubai">Дубай</button>
+        <button data-city="london">Лондон</button>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title">Добавить карточку</h2>
+        <form id="card-form">
+          <input type="hidden" id="card-id">
+          <div class="form-group">
+            <label for="card-title">Название:</label>
+            <input type="text" id="card-title" required>
+          </div>
+          <div class="form-group">
+            <label for="card-desc">Описание:</label>
+            <textarea id="card-desc" required></textarea>
+          </div>
+          <button type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+  <script src="app.js"></script>
+</body>
+</html>
