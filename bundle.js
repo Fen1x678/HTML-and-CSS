@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{renderGallery(),async function(){try{const t=await fetch("http://localhost:3000/api/cards");if(!t.ok)throw new Error("Ошибка загрузки карточек");const e=await t.json();renderCards(e),showToast("Карточки загружены","success")}catch(t){showToast(t.message,"error")}}()}));
